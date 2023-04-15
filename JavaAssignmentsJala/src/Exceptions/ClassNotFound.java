@@ -1,0 +1,19 @@
+package Exceptions;
+
+public class ClassNotFound {
+
+	public static void main(String[] args) {
+		// 10.Write a program to generate ClassNotFoundException
+
+		 try {
+	            Class.forName("com.exceptions.jala");
+	            ClassLoader.getSystemClassLoader().loadClass("com.exceptions.jala");
+
+	        } catch (ClassNotFoundException e) {
+	            /* printStackTrace() prints the throwable Exception object as well as with other Information
+	            like the line number where Exception occurs and class name where the exception occurred.*/
+	            e.printStackTrace();
+	        }
+	}
+
+}
